@@ -10,7 +10,9 @@ connectDB();
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: '*' })); 
+app.use(cors({
+    origin: 'http://localhost:3000',
+}));
 
 app.use('/api/bookings', bookingRoutes);
 app.use(errorHandler);
