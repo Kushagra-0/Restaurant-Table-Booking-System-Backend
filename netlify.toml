@@ -6,3 +6,5 @@
   from = "/api/*"
   status = 200
   to = "/.netlify/functions/api/:splat"
+[[plugins]]
+8:04:27 AM:   package = "@netlify/plugin-functions-install-core"
