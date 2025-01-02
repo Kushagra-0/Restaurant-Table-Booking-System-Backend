@@ -1,8 +1,8 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const connectDB = require('./config/db');
-const bookingRoutes = require('./routes/bookingRoutes');
-const errorHandler = require('./middleware/errorHandler');
+const connectDB = require('../../config/db')
+const bookingRoutes = require('../../routes/bookingRoutes');
+const errorHandler = require('../../middleware/errorHandler');
 const cors = require('cors');
 
 dotenv.config();
