@@ -14,9 +14,7 @@ const app = express();
 app.use(express.json());
 
 // CORS setup
-app.use(cors({
-  origin: 'http://localhost:3000', // Adjust for your frontend URL
-}));
+app.use(cors());
 
 // Test route to check if server is working
 app.get('/api/test', (req, res) => {
